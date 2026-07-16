@@ -34,21 +34,21 @@ Diretrizes:
 const AUDIO_EXAMPLES = [
   {
     id: 'pagamento',
-    file: '/Pagamento pendente.mp3',
+    file: `${import.meta.env.BASE_URL}Pagamento pendente.mp3`,
     title: 'Pagamento pendente',
     subtitle: 'Aluno impedido na catraca por mensalidade em atraso',
     context: 'A IA identifica a pendência financeira, informa o aluno com empatia e oferece link direto para regularização imediata.',
   },
   {
     id: 'duvidas',
-    file: '/Marcos com duvidas.mp3',
+    file: `${import.meta.env.BASE_URL}Marcos com duvidas.mp3`,
     title: 'Aluno com dúvidas',
     subtitle: 'Marcos questiona planos, horários e serviços disponíveis',
     context: 'A IA responde perguntas sobre grade de aulas coletivas, benefícios de planos e orienta sobre o melhor caminho para o aluno.',
   },
   {
     id: 'desconto',
-    file: '/Desconto em suplementos.mp3',
+    file: `${import.meta.env.BASE_URL}Desconto em suplementos.mp3`,
     title: 'Desconto em suplementos',
     subtitle: 'Aluno pergunta sobre promoções exclusivas para membros',
     context: 'A IA informa sobre descontos disponíveis para membros ativos e direciona para o balcão de nutrição da academia.',
