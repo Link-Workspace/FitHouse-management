@@ -44,7 +44,7 @@ export function Sidebar({ page, onNavigate, collapsed, onToggle, role, onLogout 
   return (
     <aside className={`sidebar ${collapsed ? 'is-collapsed' : ''}`}>
       <div className="sidebar__brand">
-        <img src="/fit-house-logo.png" alt="Fit House" />
+        <img src={`${import.meta.env.BASE_URL}fit-house-logo.png`} alt="Fit House" />
         {!collapsed && (
           <div>
             <strong>FIT HOUSE</strong>

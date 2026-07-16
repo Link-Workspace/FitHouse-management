@@ -50,7 +50,7 @@ export function SettingsPage({ onToast, role, onLogout }: SettingsPageProps) {
         <div className="settings-content">
           <article className="panel settings-section">
             <SectionHeader eyebrow="DADOS DA EMPRESA" title="Informações da academia" description="Dados exibidos no app, documentos e comunicações com os alunos." />
-            <div className="settings-brand-row"><img src="/fit-house-logo.png" alt="Fit House" /><div><strong>Logo da academia</strong><span>PNG ou JPG • recomendado 512 × 512 px</span><button onClick={() => onToast('Seletor de logo aberto.')}>Alterar imagem</button></div></div>
+            <div className="settings-brand-row"><img src={`${import.meta.env.BASE_URL}fit-house-logo.png`} alt="Fit House" /><div><strong>Logo da academia</strong><span>PNG ou JPG • recomendado 512 × 512 px</span><button onClick={() => onToast('Seletor de logo aberto.')}>Alterar imagem</button></div></div>
             <div className="form-grid">
               <label className="form-field"><span>Nome da academia</span><input defaultValue="Fit House Academia" /></label>
               <label className="form-field"><span>CNPJ</span><input defaultValue="12.345.678/0001-90" /></label>

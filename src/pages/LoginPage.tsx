@@ -25,7 +25,7 @@ export function LoginPage({ onLogin }: LoginPageProps) {
   return (
     <main className="management-login">
       <section className="management-login__visual">
-        <div className="management-login__brand"><img src="/fit-house-logo.png" alt="Fit House" /><div><strong>FIT HOUSE</strong><span>GESTÃO INTELIGENTE</span></div></div>
+        <div className="management-login__brand"><img src={`${import.meta.env.BASE_URL}fit-house-logo.png`} alt="Fit House" /><div><strong>FIT HOUSE</strong><span>GESTÃO INTELIGENTE</span></div></div>
         <div className="management-login__copy"><span><Sparkles size={13} /> OPERAÇÃO EM UM ÚNICO LUGAR</span><h1>Uma academia mais inteligente, organizada e próxima dos alunos.</h1><p>Controle catraca, finanças, alunos, vendas, equipe, satisfação e automações com uma visão completa da Fit House.</p></div>
         <div className="management-login__stats"><div><strong>438</strong><span>alunos ativos</span></div><div><strong>47</strong><span>treinando agora</span></div><div><strong>9</strong><span>automações de IA</span></div></div>
         <div className="management-login__testimonial"><ShieldCheck size={18} /><div><strong>Ambiente de demonstração</strong><span>Todos os dados e ações estão configurados em hardcoded para testes no computador.</span></div></div>
