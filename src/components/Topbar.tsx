@@ -14,6 +14,7 @@ const pageMeta: Record<PageKey, { title: string; subtitle: string }> = {
   employees: { title: 'Funcionários', subtitle: 'Equipe, desempenho, remuneração e recomendações de gestão.' },
   satisfaction: { title: 'Satisfação dos alunos', subtitle: 'Feedbacks do app, WhatsApp e pesquisas na saída.' },
   ai: { title: 'Central da IA', subtitle: 'Controle todas as automações inteligentes da academia.' },
+  receptionist: { title: 'Recepção', subtitle: 'Painel de atendimento e controle de acesso para recepcionistas.' },
   settings: { title: 'Configurações', subtitle: 'Preferências, integrações, segurança e dados da academia.' },
 }
 
