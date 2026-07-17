@@ -106,7 +106,7 @@ img { display: block; max-width: 100%; }
 .sidebar.is-collapsed .sidebar__profile { justify-content: center; position: relative; }
 .sidebar.is-collapsed .sidebar__profile button { position: absolute; right: -2px; bottom: -2px; background: #181513; border: 1px solid var(--line); padding: 4px; }
 
-.management-main { margin-left: var(--sidebar-width); min-height: 100vh; transition: margin-left .24s ease; }
+.management-main { margin-left: var(--sidebar-width); min-height: 100vh; transition: margin-left .24s ease; overflow-x: hidden; }
 .management-main--collapsed { margin-left: var(--sidebar-collapsed); }
 .topbar { min-height: var(--topbar-height); position: sticky; top: 0; z-index: 25; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 16px; padding: 19px clamp(22px, 3vw, 42px) 17px; border-bottom: 1px solid var(--line); background: rgba(9,8,7,.88); backdrop-filter: blur(22px); }
 .topbar__heading { display: flex; align-items: flex-start; gap: 13px; min-width: 0; }
@@ -780,7 +780,7 @@ img { display: block; max-width: 100%; }
 .feedback-action-banner strong { display: block; font-size: 13px; }
 .feedback-action-banner p { color: #756e69; font-size: 12px; margin: 2px 0 0; }
 
-.ai-hero { min-height: 230px; border: none; border-radius: 23px; background: linear-gradient(135deg, #bd151a 0%, #6b090c 100%); padding: 27px; display: grid; grid-template-columns: minmax(0, 1.4fr) 240px; gap: 25px; align-items: center; position: relative; overflow: hidden; box-shadow: 0 24px 65px rgba(87,5,8,.35); }
+.ai-hero { min-height: 230px; border: none; border-radius: 23px; background: linear-gradient(135deg, #bd151a 0%, #6b090c 100%); padding: 27px; display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, .55fr); gap: 25px; align-items: center; position: relative; overflow: hidden; box-shadow: 0 24px 65px rgba(87,5,8,.35); }
 .ai-hero.is-paused { filter: saturate(.4); }
 .ai-hero__copy { position: relative; z-index: 2; }
 .ai-hero__copy > span { color: #d59c89; font-size: 12px; font-weight: 900; letter-spacing: .13em; display: flex; align-items: center; gap: 6px; }
@@ -842,7 +842,7 @@ img { display: block; max-width: 100%; }
 .ai-safety-card > span { display: block; color: #7b94ac; font-size: 12px; font-weight: 900; letter-spacing: .1em; margin-top: 10px; }
 .ai-safety-card h3 { color: #d3cbc6; font-size: 17px; margin: 5px 0; }
 .ai-safety-card p { color: #7d7a79; font-size: 13px; line-height: 1.55; }
-.ai-chat-panel { border: 1px solid rgba(225,43,47,.16); border-radius: 19px; background: radial-gradient(circle at 0 100%, rgba(225,43,47,.1), transparent 35%), rgba(255,255,255,.018); padding: 19px; display: grid; grid-template-columns: .85fr 1.4fr; gap: 22px; align-items: center; }
+.ai-chat-panel { border: 1px solid rgba(225,43,47,.16); border-radius: 19px; background: radial-gradient(circle at 0 100%, rgba(225,43,47,.1), transparent 35%), rgba(255,255,255,.018); padding: 19px; display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.4fr); gap: 22px; align-items: center; }
 .ai-chat-panel__intro { display: flex; align-items: flex-start; gap: 11px; }
 .ai-chat-panel__intro > span { width: 47px; height: 47px; border-radius: 15px; background: rgba(225,43,47,.1); color: #ed6c70; display: grid; place-items: center; flex: none; }
 .ai-chat-panel__intro small { color: #927066; font-size: 13px; font-weight: 900; letter-spacing: .1em; }
@@ -1003,7 +1003,7 @@ img { display: block; max-width: 100%; }
   .topbar__date { display: none; }
   .dashboard-grid--wide-left, .dashboard-grid--equal { grid-template-columns: 1fr; }
   .dashboard-grid--three { grid-template-columns: 1fr 1fr; }
-  .hero-overview, .access-live-hero, .campaign-hero { grid-template-columns: 1fr; }
+  .hero-overview, .access-live-hero, .campaign-hero, .ai-hero { grid-template-columns: 1fr; }
   .hero-overview__live { min-height: 165px; }
   .campaign-hero__flow { justify-content: flex-start; }
   .attention-grid { grid-template-columns: 1fr; }
@@ -1015,6 +1015,9 @@ img { display: block; max-width: 100%; }
   .management-login { grid-template-columns: 1fr; }
   .management-login__visual { min-height: 56vh; }
   .management-login__form-area { min-height: 44vh; padding-bottom: 70px; }
+  .section-header { flex-wrap: wrap; }
+  .section-header__action { max-width: 100%; }
+  .ai-filter-row { max-width: 100%; }
 }
 
 @media (max-width: 900px) {
