@@ -68,10 +68,11 @@ img { display: block; max-width: 100%; }
 .sidebar__toggle { position: absolute; right: -13px; top: 78px; width: 27px; height: 27px; border: 1px solid var(--line-strong); border-radius: 9px; background: #181412; display: grid; place-items: center; color: #a69d97; box-shadow: 0 7px 20px rgba(0,0,0,.3); }
 .sidebar__nav { flex: 1; overflow-y: auto; overflow-x: hidden; padding: 17px 0 10px; scrollbar-width: none; }
 .sidebar__nav::-webkit-scrollbar { width: 0; }
-.sidebar__nav:hover { scrollbar-width: thin; scrollbar-color: #302a27 #0a0908; }
-.sidebar__nav:hover::-webkit-scrollbar { width: 6px; }
-.sidebar__nav::-webkit-scrollbar-track { background: #0a0908; }
-.sidebar__nav::-webkit-scrollbar-thumb { background: #302a27; border-radius: 20px; }
+.sidebar__nav:hover { scrollbar-width: thin; scrollbar-color: rgba(255,255,255,.12) transparent; }
+.sidebar__nav:hover::-webkit-scrollbar { width: 5px; }
+.sidebar__nav::-webkit-scrollbar-track { background: transparent; }
+.sidebar__nav::-webkit-scrollbar-thumb { background: rgba(255,255,255,.12); border-radius: 20px; }
+.sidebar__nav::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,.22); }
 .sidebar__section-title { display: block; padding: 0 11px 9px; color: #000; font-size: 12px; font-weight: 900; letter-spacing: .18em; }
 .sidebar__item { width: 100%; min-height: 45px; border: 0; border-radius: 13px; background: transparent; display: flex; align-items: center; gap: 11px; padding: 0 11px; margin-bottom: 4px; color: rgba(255,255,255,.75); text-align: left; position: relative; transition: background .18s ease, color .18s ease, transform .18s ease; }
 .sidebar__item:hover { background: rgba(0,0,0,.2); color: #fff; transform: translateX(1px); }
